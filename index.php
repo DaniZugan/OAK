@@ -38,13 +38,14 @@
         </nav>
     </header>
     <div class="blur-bg-overlay"></div>
+    
     <div class="form-popup">
         <span class="close-btn material-symbols-rounded">close</span>
         <div class="form-box login">
             
             <div class="form-content">
                 <h2>PRIJAVA</h2>
-                <form action="#">
+                <form action="login.php" method="post">
                     <div class="input-field">
                         <input type="text" required>
                         <label>Username</label>
@@ -62,11 +63,13 @@
                 </div>
             </div>
         </div>
+        //Registracija
+    
         <div class="form-box signup">
            
             <div class="form-content">
                 <h2>Registracija</h2>
-                <form action="#">
+                <form action="register.php" method="post">
                     <div class="input-field">
                         <input type="text" required>
                         <label>Enter your email</label>
