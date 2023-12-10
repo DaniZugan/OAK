@@ -1,9 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAK</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/tZ1Z1oNEwMEXAiKA8rFBMz9pHy+1C4cl2Exac=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="weather.js" defer></script>
 
-    </head>
-    <body>
+<!--https://cdnjs.com/libraries/slick-carousel-->
+</head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="WWs8l1ka"></script>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="home.html" class="logo">
+                <img src="logo.png" alt="logo">
+                <h2>OAK</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Alpine school</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+            <button class="login-btn">PRIJAVA</button>
+        </nav>
+    </header>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            
+            <div class="form-content">
+                <h2>PRIJAVA</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Geslo</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Registracija</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+           
+            <div class="form-content">
+                <h2>Registracija</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+
+        <div class="events">
+            <h1>Events</h1>
+        </div>
+        <!-- events in circles -->
+        <section class="circles">
+            <div class="circ-c" onclick="openPopup('ZIMSKA TEHNIKA 2020', 'hhfhfhfgfhgffhgf',['IMG_1790.jpg', 'IMG_1790.jpg', 'IMG_1790.jpg', 'IMG_1790.jpg'])">
+            <div class="circle-image">
+                <img src="IMG_1790.jpg" alt="Image 1">
+            </div>
+            <!--name of event-->
+            <p class="desc-ev">name</p>
+        </div>
+        <div class="circ-c" >
+            <div class="circle-image">
+                <img src="1.jpg" alt="Image 2">
+            </div>
+            <p class="desc-ev">name</p>
+        </div>
+        <div class="circ-c">
+            <div class="circle-image">
+                <img src="1.jpg" alt="Image 2">
+            </div>
+            <p class="desc-ev">name</p>
+        </div>
+            <div class="circ-c">
+                <div class="circle-image">
+                    <img src="1.jpg" alt="Image 2">
+                </div>
+                <p class="desc-ev">name</p>
+
+            </div>
+            <div class="circ-c">
+                <div class="circle-image">
+                    <img src="1.jpg" alt="Image 2">
+                </div>
+                <p class="desc-ev">name</p>
+            </div>
+            
+            
+        </section>
+
+        <div class="popup">
+            <div class="content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 id="event-title"></h2>
+                <p id="event-description"></p>
         
-    </body>
+                <!-- Container for circles embedded in text -->
+                <div class="embedded-circles">
+                    <!-- Each circle embedded in text -->
+                    <div class="embedded-circle" onclick="showImage('1.jpg')"></div>
+                    <div class="embedded-circle" onclick="showImage('images/IMG_0916.JPG')"></div>
+                    <div class="embedded-circle" onclick="showImage('25.jpg')"></div>
+                    <!-- Add more circles as needed -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+    
+    </main>
+    <div class="linkss">
+        <h3>Useful links:</h3>
+        <div class="row2">
+            <div class="weather">
+                <h2>&mdash;°C</h2>
+                <p>&mdash;</p>
+                
+            </div>
+            <div class="fb">
+                
+            </div>
+
+
+            </div>
+
+    </div>
+    
+</body>
 </html>
