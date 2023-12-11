@@ -63,8 +63,7 @@
                 </div>
             </div>
         </div>
-        //Registracija
-    
+         
         <div class="form-box signup">
            
             <div class="form-content">
