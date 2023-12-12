@@ -139,13 +139,11 @@
                 <!-- FB feed -->
                 <!--<div class="fb-page" data-href="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/" data-tabs="timeline" data-width="350" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/" class="fb-xfbml-parse-ignore"><a href="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/"></a></blockquote></div> -->
             </div>
-            <!--<div class="card card3">
-                <h5>Latest event</h5>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     Aenean commodo ligula eget dolor.</p>
-                 FB feed -->
-                <!--<div class="fb-page" data-href="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/" data-tabs="timeline" data-width="350" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/" class="fb-xfbml-parse-ignore"><a href="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/"></a></blockquote></div> -->
-           <!-- </div> --> 
+            <div class="card card3">
+                     <div class="fb-page" data-href="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/" 
+                data-tabs="timeline" data-width="290" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" 
+                data-show-facepile="true"><blockquote cite="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/" class="fb-xfbml-parse-ignore">
+                    <a href="https://m.facebook.com/p/Obalni-alpinisti&#x10d;ni-klub-100086123649589/"></a></blockquote></div> 
             
 
         </div>
