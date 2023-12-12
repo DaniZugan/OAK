@@ -60,7 +60,7 @@ h1{
     box-sizing: border-box;
     cursor: pointer;
     margin: 15px 15px;
-    background: rgba(0,0,0,0.6);
+    /*background: rgba(0,0,0,0.6);*/
     transition: transform 0.5s;
     margin-left: 20%;
     
@@ -78,16 +78,19 @@ h1{
     height: 100%;
     margin-left: 10%;
 }
-/*.card3 {
+.card3 {
     width: 100%;
-    max-width: 100px;
-    background: rgba(0,0,0,0.6);
+    max-width: 300px;
+    max-height: 320px;
+    /*background: rgba(0,0,0,0.6);*/
     color: #fff;
     margin: 100px auto 0;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 0;
     text-align: center;
-} */
+    margin-left: 10%;
+    margin-top: 1%;
+} 
 .search {
     margin-top: 3%;
     margin-left: 2%;
