@@ -33,6 +33,8 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="#">Alpine school</a></li>
                 <li><a href="#">Reports</a></li>
+		<li><a href="members.html">Members</a></li>
+		    
             </ul>
             <button class="login-btn">PRIJAVA</button>
         </nav>
