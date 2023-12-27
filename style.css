@@ -38,6 +38,7 @@ body {
 .col2 {
    width: 40%;
    margin-left: 10%;
+   margin-top: 5%;
 }
 h1{
     color: #fff;
@@ -67,7 +68,7 @@ h1{
 
 .card2 {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     background: rgba(0,0,0,0.6);
     color: #fff;
     margin: 100px auto 0;
@@ -130,12 +131,13 @@ h1{
 
 .weather-icon{
     margin-top: 2%;
+    margin-bottom: 0%;
     width: 50%;
     
 }
 
 .weather h1{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     margin-top: -5px;
 }
@@ -193,9 +195,25 @@ h5{
     height: 14%;
     padding-bottom: 30px;
     background-color: rgba(0,0,0,0.2);
-
     position: fixed;
     bottom: 0%;
+}
+
+.row2{
+    display: flex;
+    position: sticky;
+    align-content: space-between;
+    align-items: center;
+
+}
+.l{
+    margin-left: 10px;
+}
+
+a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px ;
 }
 h3{
     color:#fff;
@@ -205,10 +223,35 @@ h3{
     /*display: none;*/
 }
 
+.dd p{
+    font-size: 10px;
+}
+
+.card3{
+    margin-left: 0%;
+}
+
 @media (max-width: 950px) {
 
     h1{
         color: #fff;
         font-size: 45px;
     }
+    .card {
+        margin-top: 70px;
+    }
+    .col2 {
+        margin-top: 20%;
+    }
+    .weather h1, h2 {
+        font-size: 25px;
+    }
+    .dd p{
+        font-size: 10px;
+    }
+    .fb-page{
+        width: 85%;
+        margin-left: 0%;
+    }
+    
 }
