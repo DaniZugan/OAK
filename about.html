@@ -1,9 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAK</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/tZ1Z1oNEwMEXAiKA8rFBMz9pHy+1C4cl2Exac=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    
 
-    </head>
-    <body>
-        
-    </body>
-</html>
+<!--https://cdnjs.com/libraries/slick-carousel-->
+</head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="WWs8l1ka"></script>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="home.html" class="logo">
+                <img src="logo.png" alt="logo">
+                <h2>OAK</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#">Alpine school</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="members.html">Members</li>
+            </ul>
+            <button class="login-btn">PRIJAVA</button>
+        </nav>
+    </header>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            
+            <div class="form-content">
+                <h2>PRIJAVA</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Geslo</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Registracija</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+           
+            <div class="form-content">
+                <h2>Registracija</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+
+        <div class="about">
+            <h1>About us</h1>
+            <img src="about.jpeg">
+            <div class="aboutdet">
+                <div class="phone">
+                    <h2 class="ph">Pnone number</h2>
+                    <a href="tel:+38649940022">+3869303020</a>
+                </div>
+                
+                <div class="email">
+                    <h2 class="em">Email us</h2>
+                    <a href="mailto:info@obalniak.si">info@obalniak.si</a>
+                </div>
+                <div class="address">
+                    <h2 class="addr">Address</h2>
+                    <p class="ad">Zg. Škofije 14 <br>
+                    6281 Škofije</p>
+                </div>
+            </div>
+            
+            
+        </div>
+
+
+       
