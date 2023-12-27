@@ -6,28 +6,36 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    
+
 }
 body {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('background.jpg'); 
     background-size: cover;
+    background-attachment: scroll;
     background-repeat:  no-repeat;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content:center;
+    overflow: auto;
 
 }
 
 
 .circles {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   margin-top: 50px; 
+  overflow: scroll;
 }
+
+
 
 .circle-image {
   width: 150px; 
@@ -58,42 +66,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.desc-ev {
-    margin-top: 10px;
-    color: #fff;
-}
 
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-}
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    width: 60%;
-    height: auto;
-    
-}
-.close {
-    position: absolute;
-    top: 2px;
-    right: 5px;
-    font-size: 25px;
-    cursor: pointer;
-    z-index: 1000;
-}
+
+
 
 .images img {
     max-width: 100%;
@@ -106,33 +82,6 @@ h1{
 
 }
 
-.carusel img{
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-right: 10px;
-}
-
-.carusel{
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carusel-container{
-    overflow: hidden;
-}
-
-
-.embedded-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #ccc; /* Set background color */
-    margin: 10px; /* Adjust margin as needed */
-    cursor: pointer;
-    display: inline-block;
-    background-size: cover;
-}
 
 .linkss{
     width: 100%;
@@ -142,6 +91,7 @@ h1{
 
     position: fixed;
     bottom: 0%;
+    overflow: auto;
 }
 h3{
     color:#fff;
@@ -149,4 +99,147 @@ h3{
 .weather{
     color: #fff;
     /*display: none;*/
+}
+
+
+
+@media (max-width: 950px) {
+    .events h1{
+        margin-top: 30%;
+
+    }
+    .circles{
+        margin-top: 5%;
+        position: sticky;
+        flex-wrap: wrap;
+    }
+    .body{
+       
+        background-attachment: scroll;
+    }
+    
+}
+@media (max-width: 720px) {
+    .events h1{
+        margin-top: 20%;
+
+    }
+    .circles{
+        margin-top: 5%;
+        position: sticky;
+    }
+    .body{
+       
+        background-attachment: scroll;
+    }
+    
+}
+@media (max-width: 560px) {
+    .events h1{
+        margin-top: 20%;
+
+    }
+    .circles{
+        margin-top: 5%;
+        position: sticky;
+    }
+    .body{
+       
+        background-attachment: scroll;
+    }
+    
+}
+@media (max-width: 850px) {
+    .events h1{
+        margin-top: 10%;
+
+    }
+    .circles{
+        margin-top: 5%;
+        position: sticky;
+    }
+    .body{
+       
+        background-attachment: scroll;
+    }
+    
+}
+
+.desc-ev {
+    color: #fff;
+}
+
+
+/*about page */
+
+.about img{
+    width: 500px;
+    border-radius: 30px;
+    position: fixed;
+    top: 20%;
+    right: 7%;
+}
+.about h1{
+    position: fixed;
+    top: 20%;
+    left: 10%;
+
+}
+.aboutdet{
+    display: flexbox;
+    color: #fff;
+    position: fixed;
+    left: 10%;
+    top: 40%;
+    
+}
+
+@media (max-width: 950px) {
+    .about h1{
+        top: 20%;
+        font-size: 50px;
+
+    }
+    .about img{
+        width: 100%;
+    max-width: 50%;    }
+
+    
+}
+@media (max-width: 820px) {
+    .about h1{
+        top: 20%;
+        font-size: 50px;
+
+    }
+    .about img{
+        width: 100%;
+    max-width: 50%;    }
+
+    
+}
+@media (max-width: 720px) {
+    .about img{
+        max-width: 45%;
+    }
+}
+@media (max-width: 580px) {
+    .body{
+        overflow: scroll;
+    }
+    .about h1{
+        top: 15%;
+        font-size: 50px;
+    }
+    .aboutdet{
+        top: 25%;
+    }
+    .about img{
+        width: 100%;
+        max-width: 80%;
+        top: 55%; 
+        left: 10%;   
+}
+
+    
 }
