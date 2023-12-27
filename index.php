@@ -29,7 +29,7 @@
             </a>
             <ul class="links">
                 <span class="close-btn material-symbols-rounded">close</span>
-                <li><a href="events.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="#">Alpine school</a></li>
                 <li><a href="#">Reports</a></li>
@@ -149,7 +149,7 @@
             
 
         </div>
-    </div>
+       </div>
     <div class="linkss">
         <h3>Useful links:</h3>
         <div class="row2">
@@ -158,7 +158,23 @@
                 <p>&mdash;</p>
                 
             </div>
-            <div class="fb">
+            <div class="l">
+                <a href="https://ka.pzs.si">
+                    <img src="ka-logo.png" alt="KA" />
+                  </a>
+                
+            </div>
+
+            <div class="l">
+                <a href="https://www.pzs.si">
+                    <img src="pzs.jpeg" alt="PZS" />
+                  </a>
+                
+            </div>
+            <div class="l">
+                <a href="http://www.slo-alp.com">
+                    <img src="sloalp.jpeg" alt="SLO" />
+                  </a>
                 
             </div>
 
@@ -166,6 +182,7 @@
             </div>
 
     </div>
+    
     <script>
 	function AuthenticationForm() {
   		document.getElementById("demo").innerHTML = "Hello World";
